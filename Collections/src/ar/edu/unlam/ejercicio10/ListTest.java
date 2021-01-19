@@ -1,6 +1,8 @@
 package ar.edu.unlam.ejercicio10;
 
 import org.junit.Test;
+
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
@@ -25,23 +27,21 @@ public class ListTest {
 	    miLista.add(3);
 	    miLista.add(4);
 	    
-	    List<Integer> sinRepetidos = eliminarRepetidos(miLista);
+	    Set sinRepetidos = eliminarRepetidos(miLista);
 	    
-	    //miLista = miLista.stream().distinct().collect(Collectors.toList());
 	    sinRepetidos.forEach(System.out::println);
        
     }
     
-    private List<Integer> eliminarRepetidos(List<Integer> miLista){
-    	List<Integer> norep = miLista.stream().distinct().collect(Collectors.toList());
-    	return norep;
-    	/*
-    	List<Integer>  miListaSinRepetidos = new LinkedList<>();
-    	miListaSinRepetidos = miLista.stream().distinct().collect(Collectors.toList());
-    	return (Set<Integer>) miListaSinRepetidos;*/
+    private Set<Integer> eliminarRepetidos(List<Integer> miLista){
+    	Set<Integer> sinRepetidos = new HashSet();
+    	sinRepetidos.addAll(miLista);
+    	return sinRepetidos;
     }
+    //Como Set no admite repetidos, al agregar la lista con repetidos al Set,
+    //directamente no se agregan.
 
-    
+    //https://www.youtube.com/watch?v=rruCajMgvGA
     //https://es.stackoverflow.com/questions/196951/borrar-elementos-repetidos-de-una-lista
     //https://es.stackoverflow.com/questions/155209/java-8-list-obtener-elementos-no-repetidos-de-una-lista
 }
