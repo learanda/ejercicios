@@ -1,4 +1,4 @@
-package ar.edu.unlam.ejercicio6;
+package ar.edu.unlam.ejercicio06;
 
 import static org.junit.Assert.assertEquals;
 

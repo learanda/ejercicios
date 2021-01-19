@@ -1,4 +1,4 @@
-package ar.edu.unlam.ejercicio5;
+package ar.edu.unlam.ejercicio05;
 
 public class Ejercicio5 {
 	

@@ -1,4 +1,4 @@
-package ar.edu.unlam.ejercicio7y8;
+package ar.edu.unlam.ejercicio07y08;
 
 public interface Figura {
 

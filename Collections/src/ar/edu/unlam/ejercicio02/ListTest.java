@@ -1,4 +1,4 @@
-package ar.edu.unlam.ejercicio2;
+package ar.edu.unlam.ejercicio02;
 
 import java.util.LinkedList;
 import java.util.List;
