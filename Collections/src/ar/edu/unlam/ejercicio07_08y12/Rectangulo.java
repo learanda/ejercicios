@@ -1,4 +1,4 @@
-package ar.edu.unlam.ejercicio07y08;
+package ar.edu.unlam.ejercicio07_08y12;
 
 public class Rectangulo implements Figura, Comparable<Figura>{
 
@@ -48,5 +48,12 @@ public class Rectangulo implements Figura, Comparable<Figura>{
 			return 1;
 		}
 	}
+
+	
+	@Override
+	public String toString() {
+		return ""+perimetro;
+	}
+	//Agregue el toString mientras desarrollaba el ejercicio 12
 
 }
